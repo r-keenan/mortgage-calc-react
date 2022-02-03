@@ -138,6 +138,10 @@ export default function MortgageCalc() {
           </div>
         </div>
       </MortgageCalcStyle>
+      <div id="buttonGroup">
+        <button class="btn btn-primary">Calculate</button>
+        <button class="btn btn-secondary">Reset</button>
+      </div>
     </>
   );
 }
