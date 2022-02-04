@@ -1,6 +1,8 @@
 import React from "react";
 import { MortgageCalcStyle } from "../styles/MortgageCalcStyle";
 import { useState } from "react";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
 
 export default function MortgageCalc() {
   const initialCalcState = {
@@ -139,14 +141,24 @@ export default function MortgageCalc() {
               value={state.monthlyHOA}
             />
           </div>
+          <div className="containerRow">
+            <Stack spacing={2} direction="row">
+              <Button variant="contained" onClick={logState}>
+                Calculate
+              </Button>
+              <Button variant="contained">Reset</Button>
+            </Stack>
+          </div>
         </div>
       </MortgageCalcStyle>
+      {/*}
       <div id="buttonGroup">
         <button class="btn btn-primary" onClick={logState}>
           Calculate
         </button>
         <button class="btn btn-secondary">Reset</button>
       </div>
+    {*/}
     </>
   );
 }
