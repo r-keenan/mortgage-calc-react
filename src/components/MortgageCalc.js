@@ -20,6 +20,9 @@ export default function MortgageCalc() {
     setState((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     //console.log(`${e.target.name}: ${e.target.value}`);
   };
+  const logState = (e) => {
+    console.log(state);
+  };
   return (
     <>
       <MortgageCalcStyle>
@@ -87,7 +90,7 @@ export default function MortgageCalc() {
           <div class="containerRow">
             <input
               name="startDate"
-              type="text"
+              type="date"
               onChange={handleChange}
               value={state.startDate}
             />
@@ -139,7 +142,9 @@ export default function MortgageCalc() {
         </div>
       </MortgageCalcStyle>
       <div id="buttonGroup">
-        <button class="btn btn-primary">Calculate</button>
+        <button class="btn btn-primary" onClick={logState}>
+          Calculate
+        </button>
         <button class="btn btn-secondary">Reset</button>
       </div>
     </>
