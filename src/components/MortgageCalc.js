@@ -25,6 +25,9 @@ export default function MortgageCalc() {
   const logState = (e) => {
     console.log(state);
   };
+  const handleReset = (e) => {
+    setState(initialCalcState);
+  };
   return (
     <>
       <MortgageCalcStyle>
@@ -146,7 +149,9 @@ export default function MortgageCalc() {
               <Button variant="contained" onClick={logState}>
                 Calculate
               </Button>
-              <Button variant="contained">Reset</Button>
+              <Button variant="contained" onClick={handleReset}>
+                Reset
+              </Button>
             </Stack>
           </div>
         </div>
