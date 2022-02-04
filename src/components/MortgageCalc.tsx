@@ -33,11 +33,11 @@ export default function MortgageCalc() {
       <MortgageCalcStyle>
         <h3>Mortgage Calculator</h3>
 
-        <div class="mortgageCalcContainer">
-          <div class="containerRow">
-            <label for="homeValue">Home Value</label>
+        <div className="mortgageCalcContainer">
+          <div className="containerRow">
+            <label htmlFor="homeValue">Home Value</label>
           </div>
-          <div class="containerRow">
+          <div className="containerRow">
             <input
               name="homeValue"
               type="text"
@@ -45,10 +45,10 @@ export default function MortgageCalc() {
               value={state.homeValue}
             />
           </div>
-          <div class="containerRow">
-            <label for="downPayment">Down Payment</label>
+          <div className="containerRow">
+            <label htmlFor="downPayment">Down Payment</label>
           </div>
-          <div class="containerRow">
+          <div className="containerRow">
             <input
               name="downPayment"
               type="text"
@@ -56,10 +56,10 @@ export default function MortgageCalc() {
               value={state.downPayment}
             />
           </div>
-          <div class="containerRow">
-            <label for="loanAmount">Loan Payment</label>
+          <div className="containerRow">
+            <label htmlFor="loanAmount">Loan Amount</label>
           </div>
-          <div class="containerRow">
+          <div className="containerRow">
             <input
               name="loanAmount"
               type="text"
@@ -67,10 +67,10 @@ export default function MortgageCalc() {
               value={state.loanAmount}
             />
           </div>
-          <div class="containerRow">
-            <label for="interestRate">Interest Rate</label>
+          <div className="containerRow">
+            <label htmlFor="interestRate">Interest Rate</label>
           </div>
-          <div class="containerRow">
+          <div className="containerRow">
             <input
               name="interestRate"
               type="text"
@@ -78,10 +78,10 @@ export default function MortgageCalc() {
               value={state.interestRate}
             />
           </div>
-          <div class="containerRow">
-            <label for="loanTerm">Loan Term (years)</label>
+          <div className="containerRow">
+            <label htmlFor="loanTerm">Loan Term (years)</label>
           </div>
-          <div class="containerRow">
+          <div className="containerRow">
             <input
               name="loanTerm"
               type="text"
@@ -89,10 +89,10 @@ export default function MortgageCalc() {
               value={state.loanTerm}
             />
           </div>
-          <div class="containerRow">
-            <label for="startDate">Start Date</label>
+          <div className="containerRow">
+            <label htmlFor="startDate">Start Date</label>
           </div>
-          <div class="containerRow">
+          <div className="containerRow">
             <input
               name="startDate"
               type="date"
@@ -100,10 +100,10 @@ export default function MortgageCalc() {
               value={state.startDate}
             />
           </div>
-          <div class="containerRow">
-            <label for="propertyTax">Property Tax</label>
+          <div className="containerRow">
+            <label htmlFor="propertyTax">Property Tax</label>
           </div>
-          <div class="containerRow">
+          <div className="containerRow">
             <input
               name="propertyTax"
               type="text"
@@ -111,10 +111,10 @@ export default function MortgageCalc() {
               value={state.propertyTax}
             />
           </div>
-          <div class="containerRow">
-            <label for="pmi">PMI</label>
+          <div className="containerRow">
+            <label htmlFor="pmi">PMI</label>
           </div>
-          <div class="containerRow">
+          <div className="containerRow">
             <input
               name="pmi"
               type="text"
@@ -122,10 +122,10 @@ export default function MortgageCalc() {
               value={state.pmi}
             />
           </div>
-          <div class="containerRow">
-            <label for="homeInsurance">Home Insurance</label>
+          <div className="containerRow">
+            <label htmlFor="homeInsurance">Home Insurance</label>
           </div>
-          <div class="containerRow">
+          <div className="containerRow">
             <input
               name="homeInsurance"
               type="text"
@@ -133,10 +133,10 @@ export default function MortgageCalc() {
               value={state.homeInsurance}
             />
           </div>
-          <div class="containerRow">
-            <label for="monthlyHOA">Monthly HOA</label>
+          <div className="containerRow">
+            <label htmlFor="monthlyHOA">Monthly HOA</label>
           </div>
-          <div class="containerRow">
+          <div className="containerRow">
             <input
               name="monthlyHOA"
               type="text"

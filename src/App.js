@@ -1,4 +1,4 @@
-import MortgageCalc from "./components/MortgageCalc";
+import MortgageCalc from "./components/MortgageCalc.tsx";
 
 function App() {
   return (
